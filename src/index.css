@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import "leaflet/dist/leaflet.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Luxury Hotel Design System */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 25 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 25 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 15% 15%;
+
+    /* Luxury brown/gold color palette */
+    --primary: 25 35% 25%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 35 40% 85%;
+    --secondary-foreground: 25 35% 25%;
+
+    --luxury-brown: 25 35% 25%;
+    --luxury-brown-light: 25 25% 35%;
+    --luxury-brown-dark: 20 40% 15%;
+    
+    --luxury-gold: 45 85% 55%;
+    --luxury-gold-light: 45 90% 65%;
+    --luxury-gold-dark: 40 80% 45%;
+    
+    --luxury-cream: 35 40% 96%;
+    --luxury-cream-dark: 35 30% 90%;
+
+    --muted: 35 20% 90%;
+    --muted-foreground: 25 15% 45%;
+
+    --accent: 45 85% 55%;
+    --accent-foreground: 25 35% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 85%;
+    --input: 35 20% 95%;
+    --ring: 45 85% 55%;
+
+    --radius: 0.5rem;
+
+    /* Gradients */
+    --gradient-luxury: linear-gradient(135deg, hsl(var(--luxury-brown)), hsl(var(--luxury-brown-light)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--luxury-gold)), hsl(var(--luxury-gold-light)));
+    --gradient-overlay: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4));
+
+    /* Shadows */
+    --shadow-luxury: 0 10px 40px -10px hsl(var(--luxury-brown) / 0.3);
+    --shadow-gold: 0 5px 20px -5px hsl(var(--luxury-gold) / 0.4);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
